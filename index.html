@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Projects</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <h2 class="logo">JS Projects</h2>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#levels">Levels</a>
+      </nav>
+
+      <button id="darkBtn" class="dark-btn">Dark</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <span class="tag">HTML • CSS • JavaScript</span>
+      <h1>Top JavaScript Projects</h1>
+      <p>
+        Beginner, Intermediate va Advanced darajadagi JavaScript projectlar.
+        Har bir loyiha portfolio uchun foydali.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">Projectlarni ko‘rish</a>
+        <a href="#levels" class="btn secondary">Darajalar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="levels" class="levels">
+    <div class="container">
+      <div class="section-title">
+        <h2>Project Darajalari</h2>
+        <p>O‘zingga mos darajadan boshlagin.</p>
+      </div>
+
+      <div class="level-grid">
+        <div class="level-card">
+          <h3>Beginner</h3>
+          <p>Yangi boshlovchilar uchun sodda projectlar.</p>
+        </div>
+
+        <div class="level-card">
+          <h3>Intermediate</h3>
+          <p>DOM, array, localStorage va API ishlatiladigan projectlar.</p>
+        </div>
+
+        <div class="level-card">
+          <h3>Advanced</h3>
+          <p>Katta dashboard, database UI, advanced app projectlar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-title">
+        <h2>JavaScript Projectlar</h2>
+        <p>Qidirish yoki category orqali filter qilish mumkin.</p>
+      </div>
+
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Project qidirish..." />
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-level="All">All</button>
+          <button class="filter-btn" data-level="Beginner">Beginner</button>
+          <button class="filter-btn" data-level="Intermediate">Intermediate</button>
+          <button class="filter-btn" data-level="Advanced">Advanced</button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Created with HTML, CSS and JavaScript</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
